@@ -206,10 +206,15 @@ git tag name [revision]
 ### Banderas de Estado de los Archivos
 
 M (modified) : El archivo ha sido modificado
+
 C (copy-edit) : El archivo ha sido copiado y modificado
+
 R (rename-edit) : El archivo ha sido renombrado y modificado
+
 A (added) : El archivo ha sido añadido
+
 D (deleted) : El archivo ha sido eliminado
+
 U (unmerged) : El archivo presenta conflictos después de ser guardado en el servidor (merge)
 
 
