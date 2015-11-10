@@ -1,6 +1,6 @@
 ## Comandos Básicos de Git
 
-### Buscando Ayuda
+## Buscando Ayuda
 Muestra la ayuda para ese comando
 
 ```git
@@ -11,7 +11,7 @@ git help comando
 git comando --help
 ```
 
-### Creación de un repositorio
+## Creación de un repositorio
 Crea un repositorio en el directorio actual
 
 ```git
@@ -22,7 +22,7 @@ Clona un repositorio remoto dentro de un directorio
 git clone url
 ```
 
-### Operaciones sobre Archivos
+## Operaciones sobre Archivos
 Adiciona un archivo o un directorio de manera recursiva
 
 ```git
@@ -50,9 +50,103 @@ Recupera un archivo desde la rama o revisión actual
 git checkout [rev] archivo
 ```
 
-### Trabajando sobre el código
+## Trabajando sobre el código
 Imprime un reporte del estado actual del árbol de trabajo local
 
 ```git
 git status
 ```
+
+Muestra la diferencia entre los cambios en el árbol de trabajo local
+
+```git
+git diff [ruta]
+```
+
+Muestra las diferencias entre los cambios registrados y los no registrados
+
+```git
+git diff HEAD ruta
+```
+
+Selecciona el archivo para que sea incluido en el próximo commit
+
+```git
+ git add path
+```
+
+Marca el archivo para que no sea incluido en el próximo commit
+
+```git
+ git reset HEAD ruta
+```
+
+ Realiza el commit de los archivos que han sido registrados (con git-add)
+-a : Automáticamente registra todos los archivos modificados
+
+```git
+git commit
+```
+
+Deshace commit & conserva los cambios en el árbol de trabajo local
+```git
+git reset --soft HEAD^
+```
+
+Restablece el árbol de trabajo local a la versión del ultimo commit
+```git
+git reset --hard HEAD^
+```
+
+Elimina archivos desconocidos del árbol de trabajo local
+```git
+git clean
+```
+
+Elimina archivos desconocidos del árbol de trabajo local
+```git
+git clean
+```
+
+## Examinando el histórico
+Muestra el log del commit, opcionalmente de la ruta especifica
+```git
+git log [ruta]
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
