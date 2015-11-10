@@ -45,6 +45,7 @@ git mv origen destino
 ```
 
 Recupera un archivo desde la rama o revisión actual
+
 -f : Sobre-escribe los cambios locales no guardados
 
 ```git
@@ -118,9 +119,10 @@ git log [ruta]
 
 Muestra el log del commit para un rango de revisiones dado
 
-      --stat : Lista el reporte de diferencias de cada revisión
+--stat : Lista el reporte de diferencias de cada revisión
       
-      -S'pattern' : Busca el historial de cambios que concuerden con el patrón de búsqueda
+-S'pattern' : Busca el historial de cambios que concuerden con el patrón de búsqueda
+
 ```git
 git log [desde [..hasta]]
 ```
@@ -160,7 +162,8 @@ git remote add remote url
 
 Cambia el árbol de trabajo local a la rama indicada
 
-      -b rama : Crea la rama antes de cambiar el árbol de trabajo local a dicha rama
+-b rama : Crea la rama antes de cambiar el árbol de trabajo local a dicha rama
+
 ```git
 git checkout rama
 ```
@@ -194,9 +197,9 @@ git format-patch desde [..hasta]
 
 Exporta resumen de la revisión (snapshot) a un archivo
 
-      --prefix=dir/ : Anida todos los archivos del snapshot en el directorio
+--prefix=dir/ : Anida todos los archivos del snapshot en el directorio
       
-      --format=[tar|zip] : Especifica el formato de archivo a utilizar: tar or zip
+--format=[tar|zip] : Especifica el formato de archivo a utilizar: tar or zip
       
 ```git
 git archive rev > archivo
@@ -205,8 +208,11 @@ git archive rev > archivo
 ### Etiquetas
 
 Crea una etiqueta para la revisión referida
-      -s : Firma la etiqueta con su llave privada usando GPG
-      -l [patrón] : Imprime etiquetas y opcionalmente los registros que concuerden con el patrón de busqueda
+
+-s : Firma la etiqueta con su llave privada usando GPG
+
+-l [patrón] : Imprime etiquetas y opcionalmente los registros que concuerden con el patrón de busqueda
+
 ```git
 git tag name [revision]
 ```
